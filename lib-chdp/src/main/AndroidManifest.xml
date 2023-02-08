@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+
+        <!-- replace a bunch of manifest nodes to prevent adding manifest placeholders to :app -->
+        <meta-data
+            android:name="care.data4life.sdk.PLATFORM"
+            android:value="${platform}"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="care.data4life.sdk.ENVIRONMENT"
+            android:value="${environment}"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="care.data4life.sdk.DEBUG"
+            android:value="${debug}"
+            tools:replace="android:value" />
+
+        <!--suppress AndroidDomInspection -->
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            android:exported="true"
+            tools:ignore="MissingClass"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${redirectScheme}" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="care.data4life.sdk.CLIENT_ID"
+            android:value="${clientId}"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="care.data4life.sdk.CLIENT_SECRET"
+            android:value="${clientSecret}"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="care.data4life.sdk.REDIRECT_URL"
+            android:value="${redirectScheme}://oauth"
+            tools:replace="android:value" />
+    </application>
+</manifest>

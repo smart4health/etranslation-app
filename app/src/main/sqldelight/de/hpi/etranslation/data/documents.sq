@@ -1,0 +1,169 @@
+import de.hpi.etranslation.Lang;
+import java.lang.Boolean;
+import java.time.Instant;
+
+CREATE TABLE documents (
+    local_id TEXT NOT NULL PRIMARY KEY,
+    record_id TEXT,
+    original_record_id TEXT,
+    -- for uploaded records this is their updated date,
+    -- for new translations this is the date they were downloaded
+    updated_at TEXT AS Instant NOT NULL,
+    chdp_fetched_at TEXT AS Instant,
+
+    lang TEXT AS Lang,
+
+    resource_type TEXT NOT NULL,
+    -- extracted from the resource itself, used for the user
+    resource_date TEXT AS Instant NOT NULL,
+    title TEXT NOT NULL,
+    is_supported INTEGER AS Boolean NOT NULL,
+    account_id TEXT NOT NULL,
+
+    -- it is invalid for record_id and original record id to be null
+    -- as this would represent an original document that is not uploaded.
+    -- Can't figure out how to invert a condition here so rewrite it with
+    -- our good friend de Morgan
+    CHECK (record_id IS NOT NULL OR original_record_id IS NOT NULL),
+    FOREIGN KEY (account_id) REFERENCES accounts(local_id)
+);
+
+insert:
+INSERT INTO documents(
+    local_id,
+    record_id,
+    original_record_id,
+    updated_at,
+    chdp_fetched_at,
+    lang,
+    resource_type,
+    resource_date,
+    title,
+    is_supported,
+    account_id
+) VALUES (
+    :local_id,
+    :record_id,
+    :original_record_id,
+    :updated_at,
+    :chdp_fetched_at,
+    :lang,
+    :resource_type,
+    :resource_date,
+    :title,
+    :is_supported,
+    :account_id
+);
+
+-- Group documents that are translations of each other
+--
+-- NOTE: max with two args (simple function) returns null if any are null
+--
+-- NOTE: SqlDelight does not properly infer the nullability of group_concat here,
+--       even though there are many fixed bugs on the github.
+getDocumentGroups:
+SELECT
+    translation_unit.*,
+    IFNULL(group_concat(r_processing.target_lang), '') processing_langs,
+    IFNULL(group_concat(r_uploaded.target_lang), '') uploaded_langs
+FROM (
+    SELECT
+        a.local_id original_local_id,
+        a.record_id original_record_id,
+        a.title original_title,
+        a.lang original_lang,
+        a.resource_type resource_type,
+        a.resource_date resource_date,
+        acc.type account_type,
+        a.account_id account_id,
+        IFNULL(group_concat(b.lang), '') translated_langs,
+        max(a.updated_at, IFNULL(max(b.updated_at), '')) last_updated_at,
+        CASE WHEN s.record_id IS NULL THEN 0 ELSE 1 END is_selected
+    FROM documents a
+    LEFT JOIN documents b
+    ON b.original_record_id = a.record_id
+    LEFT JOIN selections s
+    ON a.record_id = s.record_id
+    LEFT JOIN accounts acc
+    ON a.account_id = acc.local_id
+    WHERE a.original_record_id IS NULL
+    AND a.record_id IS NOT NULL -- redundant but useful for sqldelight
+    AND acc.type IS NOT NULL -- redundant but useful for sqldelight
+    AND a.is_supported = 1
+    GROUP BY a.local_id
+) translation_unit
+LEFT JOIN requests r_processing
+ON translation_unit.original_local_id = r_processing.original_local_id
+AND r_processing.request_id IS NULL
+LEFT JOIN requests r_uploaded
+ON translation_unit.original_local_id = r_uploaded.original_local_id
+AND r_uploaded.request_id IS NOT NULL
+GROUP BY translation_unit.original_local_id
+ORDER BY translation_unit.resource_date DESC;
+
+getByLocalId:
+SELECT
+    *
+FROM documents
+WHERE local_id = :local_id;
+
+getSelectedOriginalsAndTranslations:
+SELECT
+    d.*,
+    IFNULL(group_concat(requests.target_lang), '') in_progress_langs
+FROM documents d
+JOIN selections s
+ON d.record_id = s.record_id
+OR d.original_record_id = s.record_id
+LEFT JOIN requests
+ON requests.original_local_id = d.local_id
+GROUP BY d.local_id;
+
+setDocumentLangByLocalId:
+UPDATE documents
+SET lang = :lang
+WHERE local_id = :local_id;
+
+setDocumentLangByRecordId:
+UPDATE documents
+SET lang = :lang
+WHERE record_id = :record_id;
+
+deleteTranslationsByOriginalRecordId:
+DELETE FROM documents
+WHERE original_record_id = :original_record_id;
+
+deleteTranslationsByOriginalRecordIdAndLang:
+DELETE FROM documents
+WHERE original_record_id = :original_record_id
+AND lang = :lang;
+
+deleteByRecordId:
+DELETE FROM documents
+WHERE record_id = :record_id;
+
+getLatestChdpFetchedAt:
+SELECT
+    max(chdp_fetched_at)
+FROM documents;
+
+getUploadedTranslationsByOriginalRecordIdAndLang:
+SELECT
+    *
+FROM documents
+WHERE original_record_id = :original_record_id
+AND record_id IS NOT NULL
+AND lang = :lang;
+
+clear:
+DELETE FROM documents;
+
+getByAccountId:
+SELECT *
+FROM documents
+WHERE account_id = :account_id;
+
+-- cascades with requests too
+deleteByAccountId:
+DELETE FROM documents
+WHERE account_id = :account_id;

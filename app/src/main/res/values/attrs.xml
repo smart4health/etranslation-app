@@ -1,0 +1,7 @@
+<resources>
+    <attr name="colorColor37" format="color" />
+    <attr name="colorOnColor37" format="color" />
+    <attr name="colorColor37Container" format="color" />
+    <attr name="colorOnColor37Container" format="color" />
+    <attr name="harmonizeColor37" format="boolean" />
+</resources>

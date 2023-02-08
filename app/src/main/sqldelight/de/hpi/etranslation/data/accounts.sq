@@ -1,0 +1,59 @@
+import de.hpi.etranslation.AccountType;
+import java.lang.Boolean;
+
+CREATE TABLE accounts (
+    local_id TEXT NOT NULL PRIMARY KEY,
+    type TEXT AS AccountType NOT NULL,
+    display_name TEXT,
+    remote_id TEXT NOT NULL,
+    has_error INTEGER AS Boolean NOT NULL
+);
+
+insert:
+INSERT INTO accounts(
+    local_id,
+    type,
+    display_name,
+    remote_id,
+    has_error
+) VALUES(
+    :local_id,
+    :type,
+    :display_name,
+    :remote_id,
+    :has_error
+);
+
+getAll:
+SELECT
+    *
+FROM accounts;
+
+getByAccountType:
+SELECT
+    *
+FROM accounts
+WHERE type = :account_type;
+
+deleteByAccountType:
+DELETE FROM accounts
+WHERE type = :account_type;
+
+deleteByAccountId:
+DELETE FROM accounts
+WHERE local_id = :local_id;
+
+updateErrorByAccountType:
+UPDATE accounts
+SET has_error = :has_error
+WHERE type = :account_type;
+
+updateDisplayNameByAccountType:
+UPDATE accounts
+SET display_name = :display_name
+WHERE type = :account_type;
+
+countHasError:
+SELECT count(*)
+FROM accounts
+WHERE has_error = 1;

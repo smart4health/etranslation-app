@@ -1,0 +1,27 @@
+CREATE TABLE selections (
+    record_id TEXT NOT NULL PRIMARY KEY
+--     FOREIGN KEY (record_id) REFERENCES documents2(record_id)
+);
+
+selectByRecordId:
+INSERT INTO selections(
+    record_id
+) VALUES (:record_id);
+
+deselectByRecordId:
+DELETE FROM selections
+WHERE record_id = :record_id;
+
+getSelectedByRecordId:
+SELECT
+    *
+FROM selections
+WHERE record_id = :record_id;
+
+count:
+SELECT
+    count(*)
+FROM selections;
+
+deselectAll:
+DELETE FROM selections;

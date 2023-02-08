@@ -1,0 +1,155 @@
+<resources>
+
+    <!--  Onboarding  -->
+
+    <string name="controller_onboard_intro_smart4health_logo_content_description">Smart4Health logo</string>
+    <string name="controller_onboard_intro_page_1_description_1">Create automated translations of your health documents using <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eTranslation">CEF eTranslation</a></string>
+    <string name="controller_onboard_intro_page_1_funding_flag_content_description">Flag of the European Union</string>
+    <string name="controller_onboard_intro_page_1_funding_info">This project received funding from the Horizon 2020 research and innovation program of the European Union under grant agreement no. 826117</string>
+    <string name="controller_onboard_intro_page_2_description_1">Data only leaves your account when you choose to.</string>
+    <string name="controller_onboard_intro_page_2_description_2">But your data will be sent to servers of the European Commission</string>
+    <string name="controller_onboard_intro_page_3_description_1">To use eTranslation, you connect to a platform such as Smart4Health.</string>
+    <string name="controller_onboard_intro_page_3_description_2">Translations are available on your connected health data platform</string>
+    <string name="controller_onboard_intro_page_4_description_1">By clicking next, you accept our <a href="">Privacy Policy and Terms of Use</a></string>
+    <string name="controller_onboard_intro_back_button">Back</string>
+    <string name="controller_onboard_intro_next_button">Next</string>
+    <string name="controller_onboard_privacy_and_terms_title">Privacy and Terms of Use</string>
+
+    <!--  Documents  -->
+
+    <string name="controller_dashboard_documents_title">Documents</string>
+    <string name="controller_dashboard_documents_title_selected">%1$d selected</string>
+    <string name="controller_dashboard_documents_no_accounts">No accounts!\nPress Accounts below to get started</string>
+    <string name="controller_dashboard_documents_no_documents">No documents yet!</string>
+    <string name="controller_dashboard_documents_fab_translate">Translate</string>
+
+    <string name="menu_dashboard_action_documents">Documents</string>
+    <string name="menu_dashboard_action_accounts">Accounts</string>
+    <string name="menu_dashboard_action_settings">Settings</string>
+
+    <string name="lang_source_global">From default original language in Settings</string>
+    <string name="lang_source_device">Inferred based on device language</string>
+    <string name="lang_source_fallback">Device language not recognized</string>
+
+    <string name="controller_dashboard_override_language_title">Set original language</string>
+    <string name="controller_dashboard_override_language_title_from">From</string>
+    <string name="controller_dashboard_override_language_title_to">To</string>
+    <string name="controller_dashboard_override_language_button_override">Confirm</string>
+    <string name="controller_dashboard_override_language_button_cancel">Cancel</string>
+
+    <string name="controller_dashboard_start_translation_title">Translate</string>
+    <string name="controller_dashboard_start_translation_title_from">From</string>
+    <string name="controller_dashboard_start_translation_title_to">To</string>
+    <string name="controller_dashboard_start_translation_button_enable_notifications">Enable notifications</string>
+    <string name="controller_dashboard_start_translation_button_translate">Translate</string>
+    <string name="controller_dashboard_start_translation_button_cancel">Cancel</string>
+    <string name="controller_dashboard_start_translation_body_reminder">Translated documents will be uploaded to Smart4Health</string>
+
+    <string name="menu_dashboard_documents_action_faq">FAQ</string>
+
+    <string name="controller_dashboard_faq_title">FAQ</string>
+    <string name="controller_dashboard_faq_q1">Why don\'t I see all of my documents?</string>
+    <string name="controller_dashboard_faq_a1">Some documents, such as images, cannot be translated, and are not shown in the list</string>
+
+    <string name="item_dashboard_document_content_desc_unchecked_indicator">Unchecked item indicator</string>
+    <string name="item_dashboard_document_content_desc_checked_indicator">Checked item indicator</string>
+    <string name="item_dashboard_document_button_view">View</string>
+    <string name="item_dashboard_document_button_override_language">Set original language</string>
+    <string name="item_dashboard_document_body_in_progress">In progress: %1$s</string>
+    <string name="item_dashboard_document_account_type_s4h_content_description">Smart4Health account</string>
+
+    <string name="controller_dashboard_view_pdf_error">Something went wrong, please try again</string>
+    <string name="controller_dashboard_view_translation_no_visualization">No visualization available</string>
+    <string name="controller_dashboard_view_pdf_content_description">First page of the PDF</string>
+
+    <string name="controller_dashboard_toast_send_requests_failure">Failed to send %1$d translation requests, please try again</string>
+    <string name="controller_dashboard_toast_translation_failure">Failed to translate document</string>
+    <string name="controller_dashboard_toast_unknown_failure">Unknown error, please try again</string>
+
+    <!--  Accounts  -->
+
+    <string name="controller_dashboard_accounts_title">Accounts</string>
+    <string name="controller_dashboard_accounts_no_accounts">Add an account with the + button below</string>
+    <string name="controller_dashboard_accounts_fab_add_account">Add account</string>
+    <string name="controller_dashboard_accounts_fab_add_account_content_description">Add account</string>
+
+    <string name="controller_dashboard_accounts_add_title">Add account</string>
+    <string name="controller_dashboard_accounts_add_s4h_content_description">Smart4Health account type</string>
+    <string name="controller_dashboard_accounts_add_toast_login_failed">Failed to log in, please try again</string>
+    <string name="controller_dashboard_accounts_add_s4h_warning">One account maximum</string>
+    <string name="controller_dashboard_accounts_add_future_options">More options coming soon!</string>
+    <string name="controller_dashboard_accounts_add_button_cancel">Cancel</string>
+
+    <string name="controller_dashboard_accounts_view_profile_picture_content_description">Profile picture</string>
+    <string name="controller_dashboard_accounts_view_button_remove_account">Remove account</string>
+    <string name="controller_dashboard_accounts_view_button_delete_deprecated_resources">Delete old resources</string>
+    <string name="controller_dashboard_accounts_view_button_fix_login">Log in again</string>
+    <string name="controller_dashboard_accounts_view_warning_fix_account">Please log in again</string>
+    <string name="controller_dashboard_accounts_view_toast_login_cancelled">Login cancelled</string>
+    <string name="controller_dashboard_accounts_view_toast_login_mismatch">Account does not match previous login</string>
+    <string name="controller_dashboard_accounts_view_toast_deleted_n_records">Deleted %1$d records</string>
+    <string name="controller_dashboard_accounts_view_toast_delete_deprecated_failed">Failed to fetch documents to delete</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_title">Remove account?</string>
+    <string name="controller_dashboard_accounts_view_dialog_message">Translations in progress will not be uploaded and documents from this account will be removed from this device</string>
+    <string name="controller_dashboard_accounts_view_dialog_neutral">Cancel</string>
+    <string name="controller_dashboard_accounts_view_dialog_positive">Remove</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_title">Delete old resources?</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_message">This is a potentially destructive action</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_neutral">Cancel</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_positive">Delete</string>
+
+    <string name="item_dashboard_accounts_error_content_description">Indicator that account has an error</string>
+    <string name="item_dashboard_accounts_profile_picture_content_description">Placeholder for a profile picture</string>
+    <string name="item_dashboard_accounts_account_type_s4h_content_description">Smart4Health account</string>
+
+    <!--  Settings  -->
+
+    <string name="controller_dashboard_settings_title">Settings</string>
+    <string name="controller_dashboard_settings_title_default_language">Default original language</string>
+    <string name="controller_dashboard_settings_body_default_language">Set the default original language of your documents</string>
+    <string name="controller_dashboard_settings_body_device_language">Device language is %1$s</string>
+    <string name="controller_dashboard_settings_body_device_language_unknown">Unknown device locale</string>
+    <string name="controller_dashboard_settings_title_theme">Theme</string>
+    <string name="controller_dashboard_settings_body_theme_day">Day mode</string>
+    <string name="controller_dashboard_settings_body_theme_night">Night mode</string>
+    <string name="controller_dashboard_settings_body_theme_follow_system">Follow system</string>
+    <string name="controller_dashboard_settings_button_log_out">Revoke consent</string>
+    <string name="controller_dashboard_settings_button_clear_default_language">None</string>
+
+    <string name="controller_dashboard_settings_revoke_dialog_title">Revoke consent?</string>
+    <string name="controller_dashboard_settings_revoke_dialog_message">All accounts will be removed and any translations in progress will not be uploaded to your health data platform</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_neutral">Cancel</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_positive">Revoke</string>
+
+    <!--  Notifications  -->
+
+    <string name="notification_uploading_title">Uploading</string>
+    <string name="notification_waiting_title">Waiting for translations</string>
+    <string name="notification_sync_title">Documents ready</string>
+    <string name="notification_sync_text">%1$d documents are ready</string>
+
+    <!--  Plurals  -->
+
+    <plurals name="controller_dashboard_override_language_text_warning">
+        <item quantity="one">Setting the original language will remove %1$d translation</item>
+        <item quantity="other">Setting the original language will remove %1$d translations</item>
+    </plurals>
+
+    <plurals name="controller_dashboard_start_translation_warning_skip_symmetric_translation">
+        <item quantity="one">Skipping %1$d document that is originally %2$s</item>
+        <item quantity="other">Skipping %1$d documents that are originally %2$s</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_retranslation">
+        <item quantity="one">Retranslating %1$d document</item>
+        <item quantity="other">Retranslating %1$d documents</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_skip_in_progress">
+        <item quantity="one">Skipping %1$d document that is already being translated to %2$s</item>
+        <item quantity="other">Skipping %1$d documents that are already being translated to %2$s</item>
+    </plurals>
+
+    <!--  Miscellaneous  -->
+
+</resources>

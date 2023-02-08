@@ -1,0 +1,58 @@
+import de.hpi.etranslation.Lang;
+import java.time.Instant;
+
+CREATE TABLE requests (
+    local_id TEXT NOT NULL PRIMARY KEY,
+    -- id from etranslation-service
+    request_id TEXT,
+    original_local_id TEXT NOT NULL,
+    target_lang TEXT AS Lang NOT NULL,
+    updated_at TEXT AS Instant NOT NULL,
+    FOREIGN KEY (original_local_id) REFERENCES documents(local_id) ON DELETE CASCADE
+);
+
+insert:
+INSERT INTO requests(
+    local_id,
+    request_id,
+    original_local_id,
+    target_lang,
+    updated_at
+) VALUES (
+    :local_id,
+    :request_id,
+    :original_local_id,
+    :target_lang,
+    :updated_at
+);
+
+getUnsentRequests:
+SELECT
+    *
+FROM requests
+WHERE request_id IS NULL;
+
+getSentRequestsByAccountId:
+SELECT
+    *
+FROM requests
+LEFT JOIN documents
+ON requests.original_local_id = documents.local_id
+WHERE request_id IS NOT NULL
+-- redundant check for sqldelight type inferencing
+-- okay maybe not "redundant" since documents is left joined
+-- but I promise :account_id is not null
+AND documents.account_id IS NOT NULL
+AND documents.account_id = :account_id;
+
+deleteByLocalId:
+DELETE FROM requests
+WHERE local_id = :local_id;
+
+setRequestIdByLocalId:
+UPDATE requests
+SET request_id = :request_id
+WHERE local_id = :local_id;
+
+clear:
+DELETE FROM requests;

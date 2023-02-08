@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/flag_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing=".75"
+        tools:text="🇺🇸🇩🇪🇫🇷🇵🇹🇮🇹🇳🇱"
+        android:textAppearance="?textAppearanceTitleMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="32dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@id/funding_background"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/flag_row"
+        app:layout_constraintWidth_max="128dp"
+        app:srcCompat="@drawable/ic_health_insurance_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="start|center_vertical"
+        android:textAppearance="?textAppearanceTitleLarge"
+        app:layout_constraintBottom_toTopOf="@id/funding_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/flag_row"
+        tools:text="@string/controller_onboard_intro_page_1_description_1" />
+
+
+    <View
+        android:id="@+id/funding_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?colorSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="@id/funding_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/funding_info" />
+
+    <ImageView
+        android:id="@+id/eu_flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/controller_onboard_intro_page_1_funding_flag_content_description"
+        app:layout_constraintBottom_toBottomOf="@id/funding_background"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/funding_background"
+        app:srcCompat="@drawable/ic_eu_flag" />
+
+    <TextView
+        android:id="@+id/funding_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/controller_onboard_intro_page_1_funding_info"
+        android:textAppearance="?textAppearanceLabelSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/eu_flag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

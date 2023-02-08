@@ -1,0 +1,155 @@
+<resources>
+
+    <!--  Onboarding  -->
+
+    <string name="controller_onboard_intro_smart4health_logo_content_description">Smart4Health-Logo</string>
+    <string name="controller_onboard_intro_page_1_description_1">Erstellung automatisierter Übersetzungen Ihrer Gesundheitsdokumente mithilfe von <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eTranslation">CEF eTranslation</a></string>
+    <string name="controller_onboard_intro_page_1_funding_flag_content_description">Flagge der Europäischen Union</string>
+    <string name="controller_onboard_intro_page_1_funding_info">Dieses Projekt erhielt eine Förderung durch das Horizon 2020 Forschungs- und Innovationsprogramm der Europäischen Union unter der Zuwendungsvereinbarung Nr. 826117</string>
+    <string name="controller_onboard_intro_page_2_description_1">Sie entscheiden, welche Daten und Informationen Sie teilen möchten.</string>
+    <string name="controller_onboard_intro_page_2_description_2">Ihre Daten werden ausschließlich an die Server der Europäischen Kommission übermittelt.</string>
+    <string name="controller_onboard_intro_page_3_description_1">Um eTranslation zu nutzen, schließen Sie sich an eine Plattform wie Smart4Health an.</string>
+    <string name="controller_onboard_intro_page_3_description_2">Übersetzungen stehen auf Ihrer angeschlossenen Gesundheitsdatenplattform zur Verfügung.</string>
+    <string name="controller_onboard_intro_page_4_description_1">Indem Sie auf Weiter klicken, akzeptieren Sie unsere <a href="">Datenschutzbestimmungen und Nutzungsbedingungen.</a></string>
+    <string name="controller_onboard_intro_back_button">Zurück</string>
+    <string name="controller_onboard_intro_next_button">Weiter</string>
+    <string name="controller_onboard_privacy_and_terms_title">Datenschutz und Nutzungsbedingungen</string>
+
+    <!--  Documents  -->
+
+    <string name="controller_dashboard_documents_title">Dokumente</string>
+    <string name="controller_dashboard_documents_title_selected">%1$d ausgewählt</string>
+    <string name="controller_dashboard_documents_no_accounts">Keine Konten!\nSelektieren Sie Konten unten, um beginnen zu können</string>
+    <string name="controller_dashboard_documents_no_documents">Noch keine Dokumente vorhanden!</string>
+    <string name="controller_dashboard_documents_fab_translate">Übersetzen</string>
+
+    <string name="menu_dashboard_action_documents">Dokumente</string>
+    <string name="menu_dashboard_action_accounts">Konten</string>
+    <string name="menu_dashboard_action_settings">Einstellungen</string>
+
+    <string name="lang_source_global">Aus Standard-Originalsprache in Einstellungen</string>
+    <string name="lang_source_device">Abgeleitet von der Gerätesprache</string>
+    <string name="lang_source_fallback">Sprache des Geräts nicht erkannt</string>
+
+    <string name="controller_dashboard_override_language_title">Legen Sie die Originalsprache fest</string>
+    <string name="controller_dashboard_override_language_title_from">Von</string>
+    <string name="controller_dashboard_override_language_title_to">Nach</string>
+    <string name="controller_dashboard_override_language_button_override">Bestätigen</string>
+    <string name="controller_dashboard_override_language_button_cancel">Abbrechen</string>
+
+    <string name="controller_dashboard_start_translation_title">Übersetzen</string>
+    <string name="controller_dashboard_start_translation_title_from">Von</string>
+    <string name="controller_dashboard_start_translation_title_to">Nach</string>
+    <string name="controller_dashboard_start_translation_button_enable_notifications">Benachrichtigungen einschalten</string>
+    <string name="controller_dashboard_start_translation_button_translate">Übersetzen</string>
+    <string name="controller_dashboard_start_translation_button_cancel">Abbrechen</string>
+    <string name="controller_dashboard_start_translation_body_reminder">Übersetzte Dokumente werden auf Smart4Health hochgeladen</string>
+
+    <string name="menu_dashboard_documents_action_faq">FAQ</string>
+
+    <string name="controller_dashboard_faq_title">FAQ</string>
+    <string name="controller_dashboard_faq_q1">Warum sehe ich nicht alle meine Dokumente?</string>
+    <string name="controller_dashboard_faq_a1">Einige Dokumente, wie z. B. Bilder, können nicht übersetzt werden und werden daher nicht in der Liste angezeigt.</string>
+
+    <string name="item_dashboard_document_content_desc_unchecked_indicator">Indikator für ungeprüft</string>
+    <string name="item_dashboard_document_content_desc_checked_indicator">Indikator für kontrolliertes Item</string>
+    <string name="item_dashboard_document_button_view">Anzeige ansehen</string>
+    <string name="item_dashboard_document_button_override_language">Legen Sie die Originalsprache fest</string>
+    <string name="item_dashboard_document_body_in_progress">In Arbeit: %1$s</string>
+    <string name="item_dashboard_document_account_type_s4h_content_description">Smart4Health-Konto</string>
+
+    <string name="controller_dashboard_view_pdf_error">Etwas hat nicht funktioniert, bitte versuchen Sie es noch einmal</string>
+    <string name="controller_dashboard_view_translation_no_visualization">Keine Visualisierung verfügbar</string>
+    <string name="controller_dashboard_view_pdf_content_description">Erste Seite der PDF-Datei</string>
+
+    <string name="controller_dashboard_toast_send_requests_failure">%1$d Übersetzungsaufträge nicht übermittelt, bitte erneut versuchen</string>
+    <string name="controller_dashboard_toast_translation_failure">Dokument konnte nicht übersetzt werden</string>
+    <string name="controller_dashboard_toast_unknown_failure">Unbekannter Fehler, bitte erneut versuchen</string>
+
+    <!--  Accounts  -->
+
+    <string name="controller_dashboard_accounts_title">Konto</string>
+    <string name="controller_dashboard_accounts_no_accounts">Fügen Sie ein Konto mit dem unteren + Icon hinzu</string>
+    <string name="controller_dashboard_accounts_fab_add_account">Konto hinzufügen</string>
+    <string name="controller_dashboard_accounts_fab_add_account_content_description">Konto hinzufügen</string>
+
+    <string name="controller_dashboard_accounts_add_title">Konto hinzufügen</string>
+    <string name="controller_dashboard_accounts_add_s4h_content_description">Art des Smart4Health-Kontos</string>
+    <string name="controller_dashboard_accounts_add_toast_login_failed">Anmeldung fehlgeschlagen, bitte versuchen Sie es erneut</string>
+    <string name="controller_dashboard_accounts_add_s4h_warning">Maximal ein Konto</string>
+    <string name="controller_dashboard_accounts_add_future_options">Weitere Optionen kommen bald!</string>
+    <string name="controller_dashboard_accounts_add_button_cancel">Abbrechen</string>
+
+    <string name="controller_dashboard_accounts_view_profile_picture_content_description">Profilbild</string>
+    <string name="controller_dashboard_accounts_view_button_remove_account">Konto entfernen</string>
+    <string name="controller_dashboard_accounts_view_button_delete_deprecated_resources">Alte Ressourcen löschen</string>
+    <string name="controller_dashboard_accounts_view_button_fix_login">Melden Sie sich erneut an</string>
+    <string name="controller_dashboard_accounts_view_warning_fix_account">Bitte melden Sie sich erneut an</string>
+    <string name="controller_dashboard_accounts_view_toast_login_cancelled">Login abgebrochen</string>
+    <string name="controller_dashboard_accounts_view_toast_login_mismatch">Konto stimmt nicht mit vorherigem Login überein</string>
+    <string name="controller_dashboard_accounts_view_toast_deleted_n_records">Gelöschte %1$d Datensätze</string>
+    <string name="controller_dashboard_accounts_view_toast_delete_deprecated_failed">Die Dokumente wurden nicht gelöscht</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_title">Konto entfernen?</string>
+    <string name="controller_dashboard_accounts_view_dialog_message">Laufende Übersetzungen werden nicht hochgeladen und Dokumente von diesem Konto werden von diesem Gerät entfernt</string>
+    <string name="controller_dashboard_accounts_view_dialog_neutral">Abbrechen</string>
+    <string name="controller_dashboard_accounts_view_dialog_positive">Entfernen</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_title">Alte Inhalte löschen?</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_message">Dies ist eine potenziell destruktive Maßnahme</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_neutral">Abbrechen</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_positive">Löschen</string>
+
+    <string name="item_dashboard_accounts_error_content_description">Indikator, dass das Konto einen Fehler aufweist</string>
+    <string name="item_dashboard_accounts_profile_picture_content_description">Platzhalter für ein Profilbild</string>
+    <string name="item_dashboard_accounts_account_type_s4h_content_description">Smart4Health-Konto</string>
+
+    <!--  Settings  -->
+
+    <string name="controller_dashboard_settings_title">Einstellungen</string>
+    <string name="controller_dashboard_settings_title_default_language">Standardsprache im Original</string>
+    <string name="controller_dashboard_settings_body_default_language">Legen Sie die Standardsprache Ihrer Dokumente fest</string>
+    <string name="controller_dashboard_settings_body_device_language">Die Sprache des Geräts beträgt %1$s</string>
+    <string name="controller_dashboard_settings_body_device_language_unknown">Unbekannte Sprachumgebung des Geräts</string>
+    <string name="controller_dashboard_settings_title_theme">Thema</string>
+    <string name="controller_dashboard_settings_body_theme_day">Modus „Tag“</string>
+    <string name="controller_dashboard_settings_body_theme_night">Nachtmodus</string>
+    <string name="controller_dashboard_settings_body_theme_follow_system">Folgen Sie dem System</string>
+    <string name="controller_dashboard_settings_button_log_out">Widerruf der Zustimmung</string>
+    <string name="controller_dashboard_settings_button_clear_default_language">Keine</string>
+
+    <string name="controller_dashboard_settings_revoke_dialog_title">Widerrufen Sie die Einwilligung?</string>
+    <string name="controller_dashboard_settings_revoke_dialog_message">Alle Konten werden entfernt und etwaige Übersetzungen werden nicht auf Ihre Gesundheitsdatenplattform hochgeladen</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_neutral">Stornieren</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_positive">Widerrufen</string>
+
+    <!--  Notifications  -->
+
+    <string name="notification_uploading_title">Wird hochgeladen</string>
+    <string name="notification_waiting_title">Warten auf Übersetzungen</string>
+    <string name="notification_sync_title">Die Dokumente wurden erfolgreich übersetzt</string>
+    <string name="notification_sync_text">%1$d Dokumente sind fertig</string>
+
+    <!--  Plurals  -->
+
+    <plurals name="controller_dashboard_override_language_text_warning">
+        <item quantity="one">Durch die Festlegung der Originalsprache wird die %1$d-Übersetzung entfernt</item>
+        <item quantity="other">Bei der Festlegung der Originalsprache werden %1$d-Übersetzungen entfernt</item>
+    </plurals>
+
+    <plurals name="controller_dashboard_start_translation_warning_skip_symmetric_translation">
+        <item quantity="one">%1$d Dokument wird ausgelassen, das ursprünglich %2$s ist</item>
+        <item quantity="other">%1$d Dokumente werden ausgelassen, die ursprünglich %2$s sind</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_retranslation">
+        <item quantity="one">umformulieren %1$d-Dokument</item>
+        <item quantity="other">zur Neuübersetzung von %1$d-Dokumenten</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_skip_in_progress">
+        <item quantity="one">Bereits zu %2$s übersetzes %1$d Dokument wird übersprungen</item>
+        <item quantity="other">Bereits zu  %2$s übersetze %1$d Dokumente werden übersprungen</item>
+    </plurals>
+
+    <!--  Miscellaneous  -->
+
+</resources>

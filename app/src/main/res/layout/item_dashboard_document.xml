@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?materialCardViewOutlinedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:checkable="true"
+    android:orientation="vertical"
+    app:checkedIcon="@null"
+    app:strokeWidth="@null">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/unchecked_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/item_dashboard_document_content_desc_unchecked_indicator"
+            android:src="@drawable/ic_baseline_circle_outline_24"
+            app:layout_constraintBottom_toBottomOf="@id/flag_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/checked_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/item_dashboard_document_content_desc_checked_indicator"
+            android:src="@drawable/ic_baseline_check_circle_outline_24"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/unchecked_indicator"
+            app:layout_constraintEnd_toEndOf="@id/unchecked_indicator"
+            app:layout_constraintStart_toStartOf="@id/unchecked_indicator"
+            app:layout_constraintTop_toTopOf="@id/unchecked_indicator" />
+
+        <!-- indicatorSize and trackThickness seem to match with the checked indicator -->
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circular_progress_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:indicatorColor="?colorControlNormal"
+            app:indicatorSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/unchecked_indicator"
+            app:layout_constraintEnd_toEndOf="@id/unchecked_indicator"
+            app:layout_constraintStart_toStartOf="@id/unchecked_indicator"
+            app:layout_constraintTop_toTopOf="@id/unchecked_indicator"
+            app:trackThickness="2dp" />
+
+        <!-- 24dp + 4dp margins -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/checked_indicator_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="32dp" />
+
+        <TextView
+            android:id="@+id/title"
+            style="?textAppearanceTitleMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@id/date"
+            app:layout_constraintStart_toEndOf="@id/checked_indicator_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Document the First" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/account_type_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?colorSurfaceVariant"
+            android:contentDescription="@string/item_dashboard_document_account_type_s4h_content_description"
+            app:contentPadding="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/subtitle"
+            app:layout_constraintDimensionRatio="2.5:1"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toTopOf="@id/subtitle"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.ETranslation.RoundedImageView"
+            tools:srcCompat="@drawable/ic_s4h_logo_reduction" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="?textAppearanceLabelMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/account_type_logo"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="Document Reference" />
+
+        <TextView
+            android:id="@+id/flag_text_view"
+            style="?textAppearanceLabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/checked_indicator_guideline"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
+            tools:text="🇩🇪* ➡\uFE00 🇫🇷" />
+
+        <TextView
+            android:id="@+id/in_progress_text_view"
+            style="?textAppearanceLabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/flag_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/flag_text_view"
+            tools:text="In progress: 🇩🇪" />
+
+        <TextView
+            android:id="@+id/date"
+            style="?textAppearanceLabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="22. Feb 2022" />
+
+        <TextView
+            android:id="@+id/source_text_view"
+            style="?textAppearanceLabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/checked_indicator_guideline"
+            app:layout_constraintTop_toBottomOf="@id/flag_text_view"
+            tools:text="* assumed based on device language"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/button_flow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="view_button,override_button"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalStyle="packed"
+            app:flow_wrapMode="chain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/checked_indicator_guideline"
+            app:layout_constraintTop_toBottomOf="@id/source_text_view" />
+
+        <Button
+            android:id="@+id/view_button"
+            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_dashboard_document_button_view" />
+
+        <Button
+            android:id="@+id/override_button"
+            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/item_dashboard_document_button_override_language" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

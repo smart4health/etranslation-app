@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">eTranslation</string>
+
+    <string name="controller_onboard_intro_title" translatable="false"><i>e</i>Translation</string>
+
+    <string name="controller_dashboard_settings_icon_theme_day" translatable="false">☀</string>
+    <string name="controller_dashboard_settings_icon_theme_night" translatable="false">🌒</string>
+    <string name="controller_dashboard_settings_icon_theme_follow_system" translatable="false">🤖</string>
+
+    <string name="item_dashboard_document_subtitle_flags_without_translations" translatable="false">%1$s%2$s</string>
+    <string name="item_dashboard_document_subtitle_flags_with_translations" translatable="false">%1$s%2$s  ➡\uFE00  %3$s</string>
+
+    <string name="controller_dashboard_override_language_body_from" translatable="false">%1$s%2$s</string>
+
+    <string name="lang_source_asterisk_device" translatable="false">*</string>
+    <string name="lang_source_asterisk_fallback" translatable="false">^</string>
+    <string name="lang_source" translatable="false">%1$s %2$s</string>
+
+    <string name="controller_dashboard_accounts_view_s4h_title" translatable="false">Smart4Health</string>
+
+    <string name="controller_dashboard_accounts_add_account_type_s4h" translatable="false">Smart4Health</string>
+
+    <string name="controller_dashboard_bullet_start_translation_warning_skip_symmetric_translation" translatable="false">⚠\uFE0F</string>
+    <string name="controller_dashboard_bullet_start_translation_warning_retranslation" translatable="false">🔄\uFE0F</string>
+    <string name="controller_dashboard_bullet_start_translation_warning_skip_in_progress" translatable="false">⚠\uFE0F</string>
+
+    <string name="controller_dashboard_bullet_override_language_text_warning" translatable="false">⚠\uFE0F</string>
+
+    <string name="controller_dashboard_settings_section_title_debug" translatable="false">Debug</string>
+    <string name="controller_dashboard_settings_button_break_account" translatable="false">Break account</string>
+</resources>

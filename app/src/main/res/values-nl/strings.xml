@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!--  Onboarding  -->
+
+    <string name="controller_onboard_intro_smart4health_logo_content_description">Smart4Health logo</string>
+    <string name="controller_onboard_intro_page_1_description_1">Maak automatische vertalingen van uw gezondheidsdocumenten met behulp van <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eTranslation">CEF eTranslation</a></string>
+    <string name="controller_onboard_intro_page_1_funding_flag_content_description">Vlag van de Europese Unie</string>
+    <string name="controller_onboard_intro_page_1_funding_info">Dit project werd gefinancierd door het Horizon 2020-programma voor onderzoek en innovatie van de Europese Unie in het kader van subsidieovereenkomst nr. 826117.</string>
+    <string name="controller_onboard_intro_page_2_description_1">Gegevens verlaten uw account alleen als u daarvoor kiest.</string>
+    <string name="controller_onboard_intro_page_2_description_2">Maar uw gegevens worden naar de servers van de Europese Commissie gestuurd.</string>
+    <string name="controller_onboard_intro_page_3_description_1">Om eTranslation te gebruiken kunt u verbinden met een platform zoals Smart4Health.</string>
+    <string name="controller_onboard_intro_page_3_description_2">Vertalingen zijn beschikbaar op het platform voor gezondheidsgegevens waarmee u verbonden bent.</string>
+    <string name="controller_onboard_intro_page_4_description_1">Door op het volgende te klikken, accepteert u onze <a href="">privacyverklaring en gebruiksvoorwaarden.</a></string>
+    <string name="controller_onboard_intro_back_button">Terug</string>
+    <string name="controller_onboard_intro_next_button">Volgende</string>
+    <string name="controller_onboard_privacy_and_terms_title">Privacy en gebruiksvoorwaarden</string>
+
+    <!--  Documents  -->
+
+    <string name="controller_dashboard_documents_title">Documenten</string>
+    <string name="controller_dashboard_documents_title_selected">%1$d geselecteerd</string>
+    <string name="controller_dashboard_documents_no_accounts">Geen accounts!\nDruk hieronder op Accounts om te beginnen</string>
+    <string name="controller_dashboard_documents_no_documents">Nog geen documenten!</string>
+    <string name="controller_dashboard_documents_fab_translate">Vertalen</string>
+
+    <string name="menu_dashboard_action_documents">Documenten</string>
+    <string name="menu_dashboard_action_accounts">Accounts</string>
+    <string name="menu_dashboard_action_settings">Instellingen</string>
+
+    <string name="lang_source_global">Van de standaard oorspronkelijke taal in de instellingen</string>
+    <string name="lang_source_device">Afgeleid van de ingestelde taal van het apparaat</string>
+    <string name="lang_source_fallback">De taal van het apparaat is niet herkend</string>
+
+    <string name="controller_dashboard_override_language_title">Oorspronkelijke taal instellen</string>
+    <string name="controller_dashboard_override_language_title_from">Van</string>
+    <string name="controller_dashboard_override_language_title_to">Tot</string>
+    <string name="controller_dashboard_override_language_button_override">Bevestigen</string>
+    <string name="controller_dashboard_override_language_button_cancel">Annuleren</string>
+
+    <string name="controller_dashboard_start_translation_title">Vertalen</string>
+    <string name="controller_dashboard_start_translation_title_from">Van</string>
+    <string name="controller_dashboard_start_translation_title_to">Tot</string>
+    <string name="controller_dashboard_start_translation_button_enable_notifications">Meldingen inschakelen</string>
+    <string name="controller_dashboard_start_translation_button_translate">Vertalen</string>
+    <string name="controller_dashboard_start_translation_button_cancel">Annuleren</string>
+    <string name="controller_dashboard_start_translation_body_reminder">Vertaalde documenten zullen worden geüpload naar SMART4HEALTH</string>
+
+    <string name="menu_dashboard_documents_action_faq">FAQ</string>
+
+    <string name="controller_dashboard_faq_title">FAQ</string>
+    <string name="controller_dashboard_faq_q1">Waarom zie ik niet al mijn documenten?</string>
+    <string name="controller_dashboard_faq_a1">Sommige documenten, zoals afbeeldingen, kunnen niet worden vertaald en worden niet in de lijst weergegeven.</string>
+
+    <string name="item_dashboard_document_content_desc_unchecked_indicator">Indicator van het niet-geselecteerde item</string>
+    <string name="item_dashboard_document_content_desc_checked_indicator">Indicator van het geselecteerde item</string>
+    <string name="item_dashboard_document_button_view">Bekijken</string>
+    <string name="item_dashboard_document_button_override_language">Oorspronkelijke taal instellen</string>
+    <string name="item_dashboard_document_body_in_progress">Vooruitgang: %1$s</string>
+    <string name="item_dashboard_document_account_type_s4h_content_description">Smart4Health account</string>
+
+    <string name="controller_dashboard_view_pdf_error">Er is iets misgegaan, probeer het opnieuw</string>
+    <string name="controller_dashboard_view_translation_no_visualization">Geen visualisatie beschikbaar</string>
+    <string name="controller_dashboard_view_pdf_content_description">Eerste bladzijde van het PDF bestand</string>
+
+    <string name="controller_dashboard_toast_send_requests_failure">%1$d vertaalaanvragen indienen mislukt, probeer het opnieuw</string>
+    <string name="controller_dashboard_toast_translation_failure">Vertalen van document mislukt</string>
+    <string name="controller_dashboard_toast_unknown_failure">Onbekende fout, probeer het opnieuw</string>
+
+    <!--  Accounts  -->
+
+    <string name="controller_dashboard_accounts_title">Accounts</string>
+    <string name="controller_dashboard_accounts_no_accounts">Voeg een account toe met de + knop hieronder</string>
+    <string name="controller_dashboard_accounts_fab_add_account">Account toevoegen</string>
+    <string name="controller_dashboard_accounts_fab_add_account_content_description">Account toevoegen</string>
+
+    <string name="controller_dashboard_accounts_add_title">Account toevoegen</string>
+    <string name="controller_dashboard_accounts_add_s4h_content_description">Smart4Health type account</string>
+    <string name="controller_dashboard_accounts_add_toast_login_failed">Inloggen mislukt, probeer het opnieuw</string>
+    <string name="controller_dashboard_accounts_add_s4h_warning">Maximaal één account</string>
+    <string name="controller_dashboard_accounts_add_future_options">Binnenkort komen er meer opties beschikbaar!</string>
+    <string name="controller_dashboard_accounts_add_button_cancel">Annuleren</string>
+
+    <string name="controller_dashboard_accounts_view_profile_picture_content_description">Profielfoto</string>
+    <string name="controller_dashboard_accounts_view_button_remove_account">Account verwijderen</string>
+    <string name="controller_dashboard_accounts_view_button_delete_deprecated_resources">Oude bronnen verwijderen</string>
+    <string name="controller_dashboard_accounts_view_button_fix_login">Opnieuw inloggen</string>
+    <string name="controller_dashboard_accounts_view_warning_fix_account">Gelieve opnieuw in te loggen</string>
+    <string name="controller_dashboard_accounts_view_toast_login_cancelled">Inloggen geannuleerd</string>
+    <string name="controller_dashboard_accounts_view_toast_login_mismatch">Account komt niet overeen met eerdere login</string>
+    <string name="controller_dashboard_accounts_view_toast_deleted_n_records">%1$d documenten verwijderd</string>
+    <string name="controller_dashboard_accounts_view_toast_delete_deprecated_failed">Documenten verwijderen mislukt</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_title">Uw account verwijderen?</string>
+    <string name="controller_dashboard_accounts_view_dialog_message">Lopende vertalingen worden niet geüpload en documenten behorend tot dit account worden van dit apparaat verwijderd.</string>
+    <string name="controller_dashboard_accounts_view_dialog_neutral">Annuleren</string>
+    <string name="controller_dashboard_accounts_view_dialog_positive">Verwijderen</string>
+
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_title">Oude bronnen verwijderen?</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_message">Dit is een potentieel verwoestende actie</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_neutral">Annuleren</string>
+    <string name="controller_dashboard_accounts_view_dialog_delete_deprecated_positive">Verwijderen</string>
+
+    <string name="item_dashboard_accounts_error_content_description">Indicator dat het account een fout heeft</string>
+    <string name="item_dashboard_accounts_profile_picture_content_description">Ruimte voor een profielfoto</string>
+    <string name="item_dashboard_accounts_account_type_s4h_content_description">Smart4Health account</string>
+
+    <!--  Settings  -->
+
+    <string name="controller_dashboard_settings_title">Instellingen</string>
+    <string name="controller_dashboard_settings_title_default_language">Standaard oorspronkelijke taal</string>
+    <string name="controller_dashboard_settings_body_default_language">Stel de standaard oorspronkelijke taal van uw documenten in</string>
+    <string name="controller_dashboard_settings_body_device_language">Ingestelde taal van het apparaat is %1$s</string>
+    <string name="controller_dashboard_settings_body_device_language_unknown">Onbekende locatie van het apparaat</string>
+    <string name="controller_dashboard_settings_title_theme">Thema</string>
+    <string name="controller_dashboard_settings_body_theme_day">Dagmodus</string>
+    <string name="controller_dashboard_settings_body_theme_night">Nachtmodus</string>
+    <string name="controller_dashboard_settings_body_theme_follow_system">Volg het systeem</string>
+    <string name="controller_dashboard_settings_button_log_out">Toestemming intrekken</string>
+    <string name="controller_dashboard_settings_button_clear_default_language">Geen</string>
+
+    <string name="controller_dashboard_settings_revoke_dialog_title">Toestemming intrekken?</string>
+    <string name="controller_dashboard_settings_revoke_dialog_message">Alle accounts worden verwijderd en lopende vertalingen worden niet naar uw platform voor gezondheidsgegevens geüpload.</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_neutral">Annuleren</string>
+    <string name="controller_dashboard_settings_revoke_dialog_button_positive">Intrekken</string>
+
+    <!--  Notifications  -->
+
+    <string name="notification_uploading_title">Uploaden</string>
+    <string name="notification_waiting_title">Wachten op vertalingen</string>
+    <string name="notification_sync_title">Documenten gereed</string>
+    <string name="notification_sync_text">%1$d documenten zijn gereed</string>
+
+    <!--  Plurals  -->
+
+    <plurals name="controller_dashboard_override_language_text_warning">
+        <item quantity="one">De oorspronkelijke taal instellen zal %1$d vertalingen verwijderen</item>
+        <item quantity="other">De oorspronkelijke taal instellen zal %1$d vertalingen verwijderen</item>
+    </plurals>
+
+    <plurals name="controller_dashboard_start_translation_warning_skip_symmetric_translation">
+        <item quantity="one">%1$d documenten overslaan die oorspronkelijk %2$s zijn</item>
+        <item quantity="other">%1$d documenten overslaan die oorspronkelijk %2$s zijn</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_retranslation">
+        <item quantity="one">Opnieuw vertalen van %1$d documenten</item>
+        <item quantity="other">Opnieuw vertalen van %1$d documenten</item>
+    </plurals>
+    <plurals name="controller_dashboard_start_translation_warning_skip_in_progress">
+        <item quantity="one">%1$d documenten overslaan die al vertaald zijn naar %2$s</item>
+        <item quantity="other">%1$d documenten overslaan die al vertaald zijn naar %2$s</item>
+    </plurals>
+
+    <!--  Miscellaneous  -->
+
+</resources>

@@ -1,0 +1,85 @@
+[versions]
+agp = "7.4.0"
+conductor = "3.2.0"
+coroutines = "1.6.4"
+dagger = "2.44.2"
+kotlin = "1.8.0"
+ktor = "2.2.2"
+result = "1.1.16"
+sqldelight = "1.5.5"
+
+[libraries]
+androidx-activity = "androidx.activity:activity:1.6.1"
+androidx-appcompat = "androidx.appcompat:appcompat:1.6.0"
+androidx-browser = "androidx.browser:browser:1.4.0"
+androidx-constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
+androidx-core = "androidx.core:core-ktx:1.9.0"
+androidx-datastore = "androidx.datastore:datastore:1.1.0-alpha01"
+androidx-fragment = "androidx.fragment:fragment-ktx:1.5.5"
+androidx-hilt-work = "androidx.hilt:hilt-work:1.0.0"
+androidx-hilt-compiler = "androidx.hilt:hilt-compiler:1.0.0"
+androidx-recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
+androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+androidx-viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
+androidx-work-runtime-ktx = "androidx.work:work-runtime-ktx:2.8.0-rc01"
+
+com-google-android-material = "com.google.android.material:material:1.8.0"
+
+conductor = { module = "com.bluelinelabs:conductor", version.ref = "conductor" }
+conductor-androidx-transition = { module = "com.bluelinelabs:conductor-androidx-transition", version.ref = "conductor" }
+conductor-archlifecycle = { module = "com.bluelinelabs:conductor-archlifecycle", version.ref = "conductor" }
+conductor-viewpager2 = { module = "com.bluelinelabs:conductor-viewpager2", version.ref = "conductor" }
+
+d4l-android = "care.data4life.hc-sdk-kmp:sdk-android:1.17.2"
+d4l-fhir = "care.data4life.hc-fhir-sdk-java:fhir-java:1.9.0"
+
+desugar = "com.android.tools:desugar_jdk_libs:1.1.8"
+
+dotsindicator = "com.tbuonomo:dotsindicator:4.3"
+
+firebase-crashlytics = "com.google.firebase:firebase-crashlytics-ktx:18.3.3"
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger" }
+
+insetter = "dev.chrisbanes.insetter:insetter:0.6.1"
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
+
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-contentnegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+leakcanary = "com.squareup.leakcanary:leakcanary-android:2.10"
+
+lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+lifecycle-viewmodel-ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+
+result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "result" }
+result-coroutines = { module = "com.michael-bull.kotlin-result:kotlin-result-coroutines", version.ref = "result" }
+
+sqldelight-coroutines = { module = "com.squareup.sqldelight:coroutines-extensions-jvm", version.ref = "sqldelight" }
+sqldelight-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
+
+threetenabp = "com.jakewharton.threetenabp:threetenabp:1.4.4"
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+
+com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
+
+com-google-firebase-crashlytics = "com.google.firebase.crashlytics:2.9.2"
+com-google-gms-googleservices = "com.google.gms.google-services:4.3.15"
+
+com-squareup-sqldelight = { id = "com.squareup.sqldelight", version.ref = "sqldelight" }
+
+jk1-dependencylicensereport = "com.github.jk1.dependency-license-report:2.1"
+
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+org-jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

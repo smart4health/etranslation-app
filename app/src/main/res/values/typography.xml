@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.ETranslation.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+    <style name="TextAppearance.ETranslation.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+    <style name="TextAppearance.ETranslation.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+
+    <style name="TextAppearance.ETranslation.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+    <style name="TextAppearance.ETranslation.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+    <style name="TextAppearance.ETranslation.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/robotoslab</item>
+    </style>
+
+    <style name="TextAppearance.ETranslation.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+
+    <style name="TextAppearance.ETranslation.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+
+    <style name="TextAppearance.ETranslation.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+    <style name="TextAppearance.ETranslation.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/lato</item>
+    </style>
+</resources>
