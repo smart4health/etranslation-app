@@ -1,5 +1,15 @@
 # eTranslation App
 
+---
+
+## Acknowledgements
+
+<img src="./assets/eu.jpg" align="left" alt="European Flag" width="60">
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 826117.
+
+---
+
 Android app to translate documents, interfaces with the [eTranslation Service].
 
 [eTranslation Service]: https://github.com/smart4health/etranslation-service
